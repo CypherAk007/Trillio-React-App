@@ -1,8 +1,30 @@
+import {RouterProvider, createBrowserRouter} from 'react-router-dom'
+
+import RouteLayout from './components/RouteLayout'
+import { Children } from 'react'
+import HomePage from './pages/Home'
+import FlightsPage from './pages/Flights'
+import CarRentalsPage from './pages/CarRentals'
+import ToursPage from './pages/Tours'
+
+const router = createBrowserRouter([
+  {path:'/',element:<RouteLayout></RouteLayout>,
+  Children:[
+    {index:true,element:<HomePage></HomePage>},
+    {path:'flights',element:<FlightsPage></FlightsPage>},
+    {path:'carrentals',element:<CarRentalsPage></CarRentalsPage>},
+    {path:'tours',element:<ToursPage></ToursPage>}
+  ]}
+])
 
 
 const App = ()=>{
+
+
   return(
-    <div className={`text-5xl -bg--color-primary shadow-light`}>Hello World!!</div>
+    <div>
+      <RouterProvider router={router}></RouterProvider>
+    </div>
   )
 }
 
