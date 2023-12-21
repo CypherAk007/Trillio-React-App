@@ -16,7 +16,7 @@ const SideBar = ()=>{
                     </NavLink>
                 </li>
                 <li className={`${classes['side-nav__item']} ` }>
-                    <NavLink to='flights' className={`${classes['side-nav__link']}`}>
+                    <NavLink to='' className={`${classes['side-nav__link']}`}>
                         <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-aircraft-take-off"></use>
                         </svg>
@@ -24,7 +24,7 @@ const SideBar = ()=>{
                     </NavLink>
                 </li>
                 <li className={`${classes['side-nav__item']} ` }>
-                    <NavLink to='carrentals' className={`${classes['side-nav__link']}`}>
+                    <NavLink to='' className={`${classes['side-nav__link']}`}>
                         <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-key"></use>
                         </svg>
@@ -32,7 +32,7 @@ const SideBar = ()=>{
                     </NavLink>
                 </li>
                 <li className={`${classes['side-nav__item']} ` }>
-                    <NavLink to='tours' className={`${classes['side-nav__link']}`}>
+                    <NavLink to='' className={`${classes['side-nav__link']}`}>
                         <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-map"></use>
                         </svg>
