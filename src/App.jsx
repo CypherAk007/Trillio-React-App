@@ -9,7 +9,7 @@ import ToursPage from './pages/Tours'
 
 const router = createBrowserRouter([
   {path:'/',element:<RouteLayout></RouteLayout>,
-  Children:[
+  children:[
     {index:true,element:<HomePage></HomePage>},
     {path:'flights',element:<FlightsPage></FlightsPage>},
     {path:'carrentals',element:<CarRentalsPage></CarRentalsPage>},

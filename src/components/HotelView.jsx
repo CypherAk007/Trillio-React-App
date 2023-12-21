@@ -1,6 +1,6 @@
-const HotelView = ()=>{
+const HotelView = (props)=>{
     return (
-        <main className={` bg-white flex-1`}>Content</main>
+        <main className={` bg-orange-500 h-[80rem] flex-1`}>{props.children}</main>
     )
 }
 
