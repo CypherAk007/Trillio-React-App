@@ -1,0 +1,13 @@
+.content-item{
+    &::before{
+        content: '';
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        // background-image: url(../../public/SVG/chevron-small-right.svg);
+        background-repeat: no-repeat;
+        background-color: var(--color-primary);
+        -webkit-mask-image:url(../../public/SVG/chevron-small-right.svg);
+        -webkit-mask-size: cover;
+    }
+}
