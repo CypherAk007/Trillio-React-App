@@ -1,6 +1,12 @@
+import Empty from "../components/Empty"
+
+
 const ToursPage = ()=>{
     return (
-        <div>ToursPage</div>
+        <div>
+            <div>Tours Page</div>
+            <Empty></Empty>
+        </div>
     )
 }
 

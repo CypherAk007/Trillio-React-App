@@ -1,6 +1,12 @@
+import Empty from "../components/Empty"
+
+
 const FlightsPage = ()=>{
     return (
-        <div>Flights Page</div>
+        <div>
+            <div>Flights Page</div>
+            <Empty></Empty>
+        </div>
     )
 }
 

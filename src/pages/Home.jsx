@@ -125,6 +125,7 @@ const HomePage = ()=>{
                             <div className={`text-3xl`}>7.8</div>
                         </div>
                     </div>
+                    <div className='relative'>
 
                     <div className={`${classes['description']}  bg-white mt-8 m-16 min-h-[10rem] shadow-light p-8 text-xl -text--color-primary-dark font-normal`}>
                         <p className={` z-10 relative`}>
@@ -140,6 +141,7 @@ const HomePage = ()=>{
                             </div>
                             <div className={`text-3xl`}>7.8</div>
                         </div>
+                    </div>
                     </div>
                     <div >
 

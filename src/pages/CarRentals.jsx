@@ -1,6 +1,12 @@
+import Empty from "../components/Empty"
+
 const CarRentalsPage = ()=>{
     return (
-        <div>Car Rentals</div>
+        <div>
+            <div>Car Rentals</div>
+            <Empty></Empty>
+        </div>
+        
     )
 }
 
