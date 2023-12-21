@@ -6,7 +6,7 @@ import HomePage from './pages/Home'
 import FlightsPage from './pages/Flights'
 import CarRentalsPage from './pages/CarRentals'
 import ToursPage from './pages/Tours'
-
+// This is App .js/ 
 const router = createBrowserRouter([
   {path:'/',element:<RouteLayout></RouteLayout>,
   children:[
