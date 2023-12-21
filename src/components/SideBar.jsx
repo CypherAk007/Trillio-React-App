@@ -15,28 +15,28 @@ const SideBar = ()=>{
                         <span>Hotels</span>
                     </NavLink>
                 </li>
-                <li className={`${classes['side-nav__item']} py-4 relative before:absolute before:content-[''] before:top-0 before:left-0 before:-bg--color-primary-light before:w-[3px] before:translate-y-0 before:transition-transform hover:before:scale-y-100 hover:before:w-full  ` }>
-                    <NavLink to='' className={`${classes['side-nav-link']} -text--color-grey-light-1 uppercase  flex  items-center py-6 px-12 `}>
+                <li className={`${classes['side-nav__item']} ` }>
+                    <NavLink to='' className={`${classes['side-nav__link']}`}>
                         <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-aircraft-take-off"></use>
                         </svg>
-                        <span>Flight</span>
+                        <span>flights</span>
                     </NavLink>
                 </li>
-                <li className={`${classes['side-nav__item']} py-4 relative before:absolute before:content-[''] before:top-0 before:left-0 before:-bg--color-primary-light before:w-[3px] before:translate-y-0 before:transition-transform hover:before:scale-y-100 hover:before:w-full  ` }>
-                    <NavLink to='' className={`${classes['side-nav-link']} -text--color-grey-light-1 uppercase  flex  items-center py-6 px-12 `}>
+                <li className={`${classes['side-nav__item']} ` }>
+                    <NavLink to='' className={`${classes['side-nav__link']}`}>
                         <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-key"></use>
                         </svg>
-                        <span>Car rental</span>
+                        <span>car rental</span>
                     </NavLink>
                 </li>
-                <li className={`${classes['side-nav__item']} py-4 relative before:absolute before:content-[''] before:top-0 before:left-0 before:-bg--color-primary-light before:w-[3px] before:translate-y-0 before:transition-transform hover:before:scale-y-100 hover:before:w-full  ` }>
-                    <NavLink to='' className={`${classes['side-nav-link']} -text--color-grey-light-1 uppercase  flex  items-center py-6 px-12 `}>
+                <li className={`${classes['side-nav__item']} ` }>
+                    <NavLink to='' className={`${classes['side-nav__link']}`}>
                         <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-map"></use>
                         </svg>
-                        <span>Tours</span>
+                        <span>tours</span>
                     </NavLink>
                 </li>
                 
