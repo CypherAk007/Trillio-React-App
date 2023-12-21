@@ -57,7 +57,7 @@ const HomePage = ()=>{
             </div>
             <div className={`flex `}>
                 <div className={`basis-[65%] `}>
-                    <div className={`shadow-light bg-white m-16 min-h-[40rem] w-[80%] tracking-wide  p-12 -text--color-primary-dark text-xl`}>
+                    <div className={`shadow-light bg-white m-16 min-h-[40rem] w-[90%] tracking-wide  p-12 -text--color-primary-dark text-xl`}>
                         <p className={`mb-6 `}>The essence of <b>Hotel las palmas</b> is reflected in every aspect of who we are and what we do. We provide unparalleled service, comfort, and style while creating meaningful and memorable experiences. </p>
                         <p className={`mb-16`}>By paying close attention to the small details that make a big difference, we inspire unforgettable experiences with every stay.</p>
                         <div>
@@ -149,6 +149,13 @@ const HomePage = ()=>{
                     </div>
                 </div>
             </div>
+            <footer className={` ${classes.cta} flex flex-col items-center bg-white min-h-[15rem] mt-4 pt-12`}>
+                <div className={`uppercase text-2xl font-medium  mb-8 mx-8 `}>Good news! we have 4 free rooms for your selected dates!</div>
+                <button className={` ${classes.btn} my-6 text-2xl border-none rounded-full relative text-white `}>
+                    <span className={`${classes.visible} inline-block py-8 px-[7.5rem] h-[100%] w-[100%] `}>Book Now</span>
+                    <span className={`${classes.invisible} inline-block h-[100%] w-[100%] overflow-hidden py-8  absolute left-0  transition-all`}>Only 4 Rooms</span>
+                </button>
+            </footer>
         </div>
     )
 }

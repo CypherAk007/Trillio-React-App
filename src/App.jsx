@@ -1,5 +1,5 @@
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
-
+import classes from './App.module.scss'
 import RouteLayout from './components/RouteLayout'
 import { Children } from 'react'
 import HomePage from './pages/Home'
@@ -22,7 +22,7 @@ const App = ()=>{
 
 
   return(
-    <div>
+    <div className={`${classes.app}`}>
       <RouterProvider router={router}></RouterProvider>
     </div>
   )
