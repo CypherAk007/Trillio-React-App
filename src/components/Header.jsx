@@ -7,33 +7,41 @@ import Bookmark from "../../public/SVG/bookmark.svg";
 import user from "../assets/img/user.jpg"
 const Header = ()=>{
     return(
-        <div className={`${classes.header} flex justify-between bg-white items-center h-[7rem]`}>
+        <header className={`${classes.header} flex justify-between bg-white items-center text-[1.4rem] h-[7rem] border border-color-grey-light-2 `}>
             {/* <div className={`pl-4`}> */}
-                <img className={`h-16`} src={logo}></img>
+                <img className={`h-[3.25rem]`} src={logo}></img>
             {/* </div> */}
-            <form className={`flex items-center relative `}>
-                <input className={`-bg--color-grey-dark-3/25 place-content-start  w-[95%] self-center py-3 px-40 rounded-2xl focus:w-[100%] transition-all `} placeholder="Search Hotels" type="text"></input>
-                <button>
+            <form className={`flex items-center  justify-center relative bg-orange-500 basis-[40%]`}>
+                <input className={`-bg--color-grey-light-2  text-inherit px-[.7rem] py-[.5rem] rounded-[100px] w-[90%] focus:outline-none focus:w-full focus:-bg--color-grey-light-3 transition-all -mr-12 placeholder:font-thin placeholder:-text--color-grey-light-4 `} placeholder="Search Hotels" type="text"></input>
+                <button className={` border-none -bg--color-grey-light-2 focus:outline-none active:translate-y-1 focus:-bg--color-grey-light-3`}>
                     {/* <img className={`absolute top-[20%] left-[85%] focus:left-[90%] `} src={mag}></img> */}
-                    <svg className={`${classes['search__button']} `}>
+                    <svg className={`${classes['search__icon']} -fill--color-grey-dark-3 h-8 w-8`}>
                         <use xlinkHref="../../public/sprite.svg#icon-magnifying-glass"></use>
                     </svg>
                     
                 </button>
             </form>
-            <div className={`flex gap-4 pr-4 items-center self-stretch min-h-full hover:bg-yellow-400`}>
-                <div className={`min-h-full`}>
-                    <img src={Bookmark}></img>
+            <nav className={`${classes['user-nav']} flex gap-4 pr-4 items-center self-stretch min-h-full hover:bg-yellow-400`}>
+                <div className={`${classes['user-nav__icon-box']} min-h-full`}>
+                    {/* <img src={Bookmark}></img> */}
+                    <svg className={`${classes['user-nav__icon'] } h-9 w-9 `}>
+                        <use xlinkHref="../../public/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span className={`${classes['user-nav__notification']}`}>7</span>
                 </div>
-                <div className={`min-h-full`}>
-                    <img src={chat} alt="chat" />
+                <div className={`${classes['user-nav__icon-box']} min-h-full`}>
+                    {/* <img src={Bookmark}></img> */}
+                    <svg className={`${classes['user-nav__icon']} h-9 w-9 `}>
+                        <use xlinkHref="../../public/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span className={`${classes['user-nav__notification']}`}>13</span>
                 </div>
-                <div className={`ml-4 flex items-center gap-4 min-h-full hover:bg-pink-500`}>
-                    <img className={`h-16 rounded-full`} src={user}></img>
-                    <div className={`text-xl`}>Jonas</div>
+                <div className={`${classes['user-nav__user']} ml-4 flex items-center gap-4 min-h-full hover:bg-pink-500`}>
+                    <img className={`${classes['user-nav__user-photo']} h-16 rounded-full`} alt="User Photo" src={user}></img>
+                    <span className={`${classes['user-nav__user-name']} text-xl`}>Jonas</span>
                 </div>
-            </div>
-        </div>
+            </nav>
+        </header>
     )
 }
 
