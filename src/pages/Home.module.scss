@@ -11,3 +11,16 @@
         -webkit-mask-size: cover;
     }
 }
+
+.description::before{
+    content: "\201C";
+    position: absolute;
+    font-size: 20rem;
+    color:var(--color-grey-light-2);
+    top:0rem;
+    left: 4rem;
+    line-height: 1;
+    font-family: sans-serif;
+    z-index: 1;
+    
+}

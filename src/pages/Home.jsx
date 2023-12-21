@@ -6,6 +6,8 @@ import u1 from '../assets/img/user-3.jpg'
 import u2 from '../assets/img/user-4.jpg'
 import u3 from '../assets/img/user-5.jpg'
 import u4 from '../assets/img/user-6.jpg'
+import u5 from '../assets/img/user-1.jpg'
+import u6 from '../assets/img/user-2.jpg'
 
 const HomePage = ()=>{
     return (
@@ -107,14 +109,42 @@ const HomePage = ()=>{
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        review 1
+                <div className={` flex-1 relative flex flex-col items-center`}>
+                    <div className={`${classes['description']}  bg-white m-16 min-h-[10rem] shadow-light p-8 text-xl -text--color-primary-dark font-normal`}>
+                        <p className={` z-10 relative`}>
+                            Radisson Blu, located on Bengaluru's Outer Ring Road in Marathalli, stands as a beacon of luxury.  As part of recreational facilities, they have temperature-controlled pool 
+                        </p>
+                        <div className={`mt-8 flex justify-between items-center`}>
+                            <div className={`flex gap-6`}>
+                            <img className={'h-[4rem] w-[4rem] rounded-full'} src={u5}></img>
+                                <div className={`flex flex-col`}>
+                                    <div className={`text-2xl font-bold uppercase`}>Nick smith</div>
+                                    <div className={`font-thin text-lg`}>Feb 23rd, 2017</div>
+                                </div>
+                            </div>
+                            <div className={`text-3xl`}>7.8</div>
+                        </div>
                     </div>
-                    <div>
-                        review 2
+
+                    <div className={`${classes['description']}  bg-white mt-8 m-16 min-h-[10rem] shadow-light p-8 text-xl -text--color-primary-dark font-normal`}>
+                        <p className={` z-10 relative`}>
+                        As part of recreational facilities, they have temperature-controlled pool offering a refreshing respite, while the well-equipped fitness center caters to health enthusiasts.
+                        </p>
+                        <div className={`mt-8 flex justify-between items-center`}>
+                            <div className={`flex gap-6`}>
+                            <img className={'h-[4rem] w-[4rem] rounded-full'} src={u6}></img>
+                                <div className={`flex flex-col`}>
+                                    <div className={`text-2xl font-bold uppercase`}>Martha</div>
+                                    <div className={`font-thin text-lg`}>Feb 23rd, 2017</div>
+                                </div>
+                            </div>
+                            <div className={`text-3xl`}>7.8</div>
+                        </div>
                     </div>
-                    <button> Show all &rarr;</button>
+                    <div >
+
+                        <button className={`-mt-4 -border--color-primary border-b-2  text-xl font-semibold`}> Show all &rarr;</button>
+                    </div>
                 </div>
             </div>
         </div>
