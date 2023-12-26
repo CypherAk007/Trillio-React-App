@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
-import classes from './Header.module.scss'
+import classes from './Header.module.scss';
 import HotelView from "./HotelView";
 import SideBar from "./SideBar";
 const RouteLayout = ()=>{
@@ -11,7 +11,6 @@ const RouteLayout = ()=>{
                 <SideBar></SideBar>
                 <HotelView>
                 {/* <div> */}
-
                     <Outlet></Outlet>
                 {/* </div> */}
                 </HotelView>

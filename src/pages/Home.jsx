@@ -126,22 +126,21 @@ const HomePage = ()=>{
                         </div>
                     </div>
                     <div className='relative'>
-
-                    <div className={`${classes['description']}  bg-white mt-8 m-16 min-h-[10rem] shadow-light p-8 text-xl -text--color-primary-dark font-normal`}>
-                        <p className={` z-10 relative`}>
-                        As part of recreational facilities, they have temperature-controlled pool offering a refreshing respite, while the well-equipped fitness center caters to health enthusiasts.
-                        </p>
-                        <div className={`mt-8 flex justify-between items-center`}>
-                            <div className={`flex gap-6`}>
-                            <img className={'h-[4rem] w-[4rem] rounded-full'} src={u6}></img>
-                                <div className={`flex flex-col`}>
-                                    <div className={`text-2xl font-bold uppercase`}>Martha</div>
-                                    <div className={`font-thin text-lg`}>Feb 23rd, 2017</div>
+                        <div className={`${classes['description']}  bg-white mt-8 m-16 min-h-[10rem] shadow-light p-8 text-xl -text--color-primary-dark font-normal`}>
+                            <p className={` z-10 relative`}>
+                            As part of recreational facilities, they have temperature-controlled pool offering a refreshing respite, while the well-equipped fitness center caters to health enthusiasts.
+                            </p>
+                            <div className={`mt-8 flex justify-between items-center`}>
+                                <div className={`flex gap-6`}>
+                                <img className={'h-[4rem] w-[4rem] rounded-full'} src={u6}></img>
+                                    <div className={`flex flex-col`}>
+                                        <div className={`text-2xl font-bold uppercase`}>Martha</div>
+                                        <div className={`font-thin text-lg`}>Feb 23rd, 2017</div>
+                                    </div>
                                 </div>
+                                <div className={`text-3xl`}>7.8</div>
                             </div>
-                            <div className={`text-3xl`}>7.8</div>
                         </div>
-                    </div>
                     </div>
                     <div >
 

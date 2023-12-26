@@ -21,7 +21,13 @@ export default {
       boxShadow:{
         'dark':'0 2rem 6rem rgba(0,0,0,.3)',
         'light':'0 2rem 5rem rgba(0,0,0,.06)',
-      }
+      },
+      screens:{
+        'big-desktop':{'max':'112.5em'},
+        'tab-land':{'max':'75em'},
+        'tab-port':{'max':'56.25em'},
+        'phone':{'max':'37.5em'},
+      },
     },
   },
   plugins: [],
