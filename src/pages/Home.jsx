@@ -17,9 +17,9 @@ const HomePage = ()=>{
                 <img src={h2} className={` w-[33.33%] h-[33.33%]`}></img>
                 <img src={h3} className={` w-[33.33%] h-[33.33%]`}></img>
             </div>
-            <div className={`h-[6rem] bg-white shadow-light flex justify-between items-center`}>
+            <div className={`h-[6rem] bg-white shadow-light flex justify-between items-center phone:h-auto`}>
                 <div className={`flex items-center`}>
-                    <div className={`uppercase text-4xl font-thin mx-8`}>Hotel las palmas</div>
+                    <div className={`uppercase text-4xl font-thin mx-8 phone:text-2xl phone:mx-4`}>Hotel las palmas</div>
                     <div>
                         <div className={`mr-auto  flex`}>
                             <svg className={`${classes['user-nav__icon'] } h-7 w-7  -fill--color-primary-dark `}>
@@ -45,19 +45,19 @@ const HomePage = ()=>{
                         <svg className={`${classes['user-nav__icon'] } h-7 w-7  -fill--color-primary-dark `}>
                             <use xlinkHref="../../public/sprite.svg#icon-location-pin"></use>
                         </svg>
-                        <div className={` -border--color-primary border-b-2  font-medium text-lg mr-4`}>
+                        <div className={` -border--color-primary border-b-2  font-medium text-lg mr-4 phone:text-sm`}>
                             Bangalore, Karnataka
                         </div>
                     </div>
                     <div className={`px-8 flex flex-col items-center justify-center h-full font-thin text-white -bg--color-primary`}>
-                        <div className={`text-3xl pb-2`}>8.6</div>
+                        <div className={`text-3xl pb-2 phone:text-2xl`}>8.6</div>
                         <div>500 votes</div>
                     </div>
                 </div>
             </div>
-            <div className={`flex `}>
+            <div className={`flex  justify-center items-center phone:flex-col phone:items-center`}>
                 <div className={`basis-[65%] `}>
-                    <div className={`shadow-light bg-white m-16 min-h-[40rem] w-[90%] tracking-wide  p-12 -text--color-primary-dark text-xl`}>
+                    <div className={`shadow-light bg-white m-16 min-h-[40rem] w-[90%] tracking-wide  p-12 tab-port:p-8 -text--color-primary-dark text-xl phone:m-8`}>
                         <p className={`mb-6 `}>The essence of <b>Hotel las palmas</b> is reflected in every aspect of who we are and what we do. We provide unparalleled service, comfort, and style while creating meaningful and memorable experiences. </p>
                         <p className={`mb-16`}>By paying close attention to the small details that make a big difference, we inspire unforgettable experiences with every stay.</p>
                         <div>
@@ -110,7 +110,7 @@ const HomePage = ()=>{
                     </div>
                 </div>
                 <div className={` flex-1 relative flex flex-col items-center`}>
-                    <div className={`${classes['description']}  bg-white m-16 min-h-[10rem] shadow-light p-8 text-xl -text--color-primary-dark font-normal`}>
+                    <div className={`${classes['description']}  bg-white m-16 tab-port:m-12 min-h-[10rem] shadow-light p-8 tab-port:p-4  text-xl -text--color-primary-dark font-normal`}>
                         <p className={` z-10 relative`}>
                             Radisson Blu, located on Bengaluru's Outer Ring Road in Marathalli, stands as a beacon of luxury.  As part of recreational facilities, they have temperature-controlled pool 
                         </p>
@@ -126,7 +126,7 @@ const HomePage = ()=>{
                         </div>
                     </div>
                     <div className='relative'>
-                        <div className={`${classes['description']}  bg-white mt-8 m-16 min-h-[10rem] shadow-light p-8 text-xl -text--color-primary-dark font-normal`}>
+                        <div className={`${classes['description']}  bg-white mt-8 m-16 tab-port:m-12  min-h-[10rem] shadow-light p-8 tab-port:p-4 tab-port:mt-4 text-xl -text--color-primary-dark font-normal`}>
                             <p className={` z-10 relative`}>
                             As part of recreational facilities, they have temperature-controlled pool offering a refreshing respite, while the well-equipped fitness center caters to health enthusiasts.
                             </p>

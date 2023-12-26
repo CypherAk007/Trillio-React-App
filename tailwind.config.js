@@ -27,6 +27,7 @@ export default {
         'tab-land':{'max':'75em'},
         'tab-port':{'max':'56.25em'},
         'phone':{'max':'37.5em'},
+        'smallest':{'max':'31.25em'}
       },
     },
   },

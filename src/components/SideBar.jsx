@@ -5,11 +5,11 @@ const hovereffect =''
 const sideLink = ''
 const SideBar = ()=>{
     return (
-        <nav className={`${classes.sidebar} -bg--color-grey-dark-1 text-white  grow-0 shrink-0 basis-[18%] flex flex-col justify-between ml-`}>
-            <ul className={`${classes['side-nav']}  `}>
+        <nav className={`${classes.sidebar} -bg--color-grey-dark-1 text-white  grow-0 shrink-0 basis-[18%] flex flex-col justify-between `}>
+            <ul className={`${classes['side-nav']} tab-port:flex tab-port:mt-0 `}>
                 <li className={`${classes['side-nav__item']} ` }>
-                    <NavLink to='' className={`${classes['side-nav__link']}`}>
-                        <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
+                    <NavLink to='' className={`${classes['side-nav__link']} `}>
+                        <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 phone:mr-0 phone:w-7 phone:h-7 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-home"></use>
                         </svg>
                         <span>Hotels</span>
@@ -17,7 +17,7 @@ const SideBar = ()=>{
                 </li>
                 <li className={`${classes['side-nav__item']} ` }>
                     <NavLink to='flights' className={`${classes['side-nav__link']}`}>
-                        <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
+                        <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 phone:mr-0 phone:w-7 phone:h-7 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-aircraft-take-off"></use>
                         </svg>
                         <span>flights</span>
@@ -25,7 +25,7 @@ const SideBar = ()=>{
                 </li>
                 <li className={`${classes['side-nav__item']} ` }>
                     <NavLink to='carrentals' className={`${classes['side-nav__link']}`}>
-                        <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
+                        <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 phone:mr-0 phone:w-7 phone:h-7 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-key"></use>
                         </svg>
                         <span>car rental</span>
@@ -33,7 +33,7 @@ const SideBar = ()=>{
                 </li>
                 <li className={`${classes['side-nav__item']} ` }>
                     <NavLink to='tours' className={`${classes['side-nav__link']}`}>
-                        <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 `}>
+                        <svg className={`${classes['side-nav__icon'] } h-9 w-9 fill-current mr-8 phone:mr-0 phone:w-7 phone:h-7 `}>
                             <use xlinkHref="../../public/sprite.svg#icon-map"></use>
                         </svg>
                         <span>tours</span>
@@ -41,7 +41,7 @@ const SideBar = ()=>{
                 </li>
                 
             </ul>
-            <div className={`text-[1.2rem] text-center p-[2.5rem] -text--color-grey-light-4`}>
+            <div className={`text-[1.2rem] text-center p-[2.5rem] -text--color-grey-light-4 tab-port:hidden`}>
                 &copy; 2023 by Abhishek Krishna. All rights reserved
             </div>
         </nav>
